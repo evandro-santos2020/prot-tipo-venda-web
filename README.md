@@ -22,5 +22,5 @@ O objetivo do projeto é criar um protótipo de vendas web.
 
 ---
 
-Feito by [Associação Beradeiro]
+Feito by [Evandro Santos]
 
