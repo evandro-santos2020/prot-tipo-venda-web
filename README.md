@@ -10,7 +10,7 @@
 
 
 
-
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0483913e-40ed-4738-af7f-16dae6832c28/deploy-status)](https://app.netlify.com/sites/vendas-web/deploys)
 ## 🚀 Projeto
 
 O objetivo do projeto é criar um protótipo de vendas web.
