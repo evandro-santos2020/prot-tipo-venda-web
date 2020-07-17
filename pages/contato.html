@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="../src/css/style.css">
+    
+    <title>Contatos!</title>
+  </head>
+  <body>
+    <div class="container-menu d-flex justify-content-between">
+        <img src="../src/imagens/logo.png">
+        <ul class="ul-menu d-flex">
+            <div class="btn-group" role="group">
+                <button type="button" class="btn btn-secondary"><a href="./index.html" 
+                    style="color: white;">Home</button></a>
+                <button type="button" class="btn btn-secondary"><a href="./produto.html"
+                    style="color: white;">Produtos</button></a>
+                <button type="button" class="btn btn-secondary"><a href="./contato.html"
+                    style="color: white;">Contato</button></a>
+              </div>
+        </ul>
+    </div>
+
+    <div class="container-contato">
+        <h1 style="vertical-align: inherit;">Suporte para Contato</h1>
+ 
+        <!-- <h3 class="introducao d-flex justify-content-between"> CONTATOS </h3> -->
+    </div>
+
+    <div class="container-contato-inf text-center">
+        <h4> Evandro da Silva Santos </h4>
+        <h5> E-mail: evandro.2000@hotmail.com </h5>
+        <h5> Telefone: +55 (41) 98540-4148 </h5>
+        <h7> **Atendemos também pelo WhatsApp!** </h7>
+    </div>
+
+    <div class="container-contato-inf text=center">
+      <form class="d-flex flex-column justify-content-center aling-itens-center" onsubmit="enviarEmail()">
+        <label for="nome">NOME</label>
+        <input id="nome" required type="text" name="nome">
+
+        <label for="email">EMAIL</label>
+        <input id="email"required type="text" name="email">
+
+        <label for="assunto">MOTIVO DO CONTATO</label>
+        <select id="select-assunto" nome="assunto">
+          <option value="TRABALHO 1">TRABALHO 1 </option>
+          <option value="TRABALHO 2">TRABALHO 2 </option>
+        </select>
+
+        <label for="mensagem">MENSAGEM</label>
+        <input id="mensagem" required type="text" name="mensagem">
+        <br>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+
+
+
+
+ 
+
+    <footer class="footer" style="background-color:rgb(158, 43, 43); padding-top: 20px;">
+      <div class="container-rodape text-center">
+        <div class="rodapé">
+          <h2 style="font-style: italic;">Contato</h2>
+          <li>(41) 985401-4148</li>
+          <li></li>
+          <li>CNPJ: xx.xxx.xxx/xxxx-xx</li>
+
+          <address>
+            <strong style="vertical-align: inherit;" >Twitter, Inc.</strong>
+              <br>
+            <strong style="vertical-align: inherit;" >1355 Market St, Suite 900</strong>
+             <br>
+            <abbr title="telefone" style="vertical-align: inherit;">(41) 985401-4148</abbr>
+                    
+        </address>
+
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script>
+      function enviarEmail() {
+        var nome = document.getElementById ("nome");
+        var email = document.getElementById ("email");
+        var selectAssunto = document.getElementById ("select-assunto");
+        
+        var assunto = selectAssunto.options[selectAssunto.selectedIndex].value;
+        
+        var mensagem = document.getElementById ("mensagem");
+
+        var btnEnviar = document.getElementById ("btn-enviar");
+
+        window.open("mailto:" + email.value + "?subject=" + assunto + "&body=" + mensagem.value);
+    
+      }
+    </script>
+  
+  </body>
+</html>
