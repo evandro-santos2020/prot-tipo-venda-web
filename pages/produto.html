@@ -12,20 +12,28 @@
     <title>Produtos!</title>
   </head>
   <body>
-    <div class="container-menu d-flex justify-content-between">
-        <img src="../src/imagens/logo.png">
-        <ul class="ul-menu d-flex">
-            <div class="btn-group" role="group">
-                <button type="button" class="btn btn-secondary"><a href="./index.html" 
-                    style="color: white;">Home</button></a>
-                <button type="button" class="btn btn-secondary"><a href="./produto.html"
-                    style="color: white;">Produtos</button></a>
-                <button type="button" class="btn btn-secondary"><a href="./contato.html"
-                    style="color: white;">Contato</button></a>
-              </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex justify-content-between">
+      <a class="navbar-brand" href="#"> <img src="src/imagens/logo.png">  </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pages/produto.html">Produtos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pages/contato.html">Contato</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>
         </ul>
-    
-    </div>
+      </div>
+    </nav>
 
     <div class="agrupamento d-flex justify-content-between">
         
